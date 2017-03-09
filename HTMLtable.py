@@ -2,14 +2,12 @@
 This takes a large text file for input and turns it into an HTML table 
 with two lines per row and one empty column to the right.
 To use it: 
-Edit the opening definitions to reference the text file you're using.
-Run it from the terminal like so:
-$ python HTMLtable.py > table.html
-
+Use tableall.sh when that script and this script are both in a
+folder full of .txt files.
 To get it to show up as a table in Google Docs:
 One way to do it is to open the resulting html file in a browser,
 then select all, paste into Google Docs, and edit table properties.
-
+A better way would be to edit the script to print a table with a border.
 """
 import sys
 
