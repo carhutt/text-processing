@@ -37,15 +37,17 @@ newnames = [
 ];
 
 index=0
-# listing directories
-print "The dir is: %s"%os.listdir(os.getcwd())
+# listing files
+print "The current directory contains: %s"%os.listdir(os.getcwd())
 
+#renaming -- number of items in newnames should match number in directory
 for f in os.listdir("/Users/Andrew/Documents/KHi/Smart Cities/GE/bash_scraper/texts/html/GDrive/"):
 	if f.endswith(".gdoc"):
 		os.rename(f, newnames[index])
 		index += 1
 
+print "\n".
 print "Successfully renamed."
-
-# listing directories after renaming "tutorialsdir"
-print "the dir is: %s" %os.listdir(os.getcwd())
+print "\n".
+# listing files after renaming
+print "The current directory now contains: %s" %os.listdir(os.getcwd())
